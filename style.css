@@ -1,0 +1,95 @@
+/* main.html */
+
+/* 기본 스타일 초기화 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 2.5rem; /* rem: 루트 글꼴 크기 (html_보통 16px) 기준으로 계산 (상대적인 단위) -> 40px */
+    font-weight: bold;
+}
+
+/* 상단 텍스트 */
+div:first-of-type {
+    margin-bottom: 30px; /* div:first-of-type: 첫 번째 div 요소 -> 아래에 30px 여백*/
+}
+
+/* 개별 카드 스타일 */
+.card {
+    display: inline-block; /* 인라인 레벨 요소로 변경 -> 카드 가로로 배치*/
+    margin: 0 100px; /* (외부) 카드 간격 -> 위아래 0, 왼쪽오른쪽 100px */
+    width: 200px; /* 카드 너비 */
+    padding: 20px; /* (내부) 카드 안쪽 여백 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 */
+    border-radius: 10px; /* 카드 모서리 둥글게 */
+    background-color: #fff; /* 카드 배경색 */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* 호버(마우스를 요소 위에 가져다 댔을 때 적용되는 스타일) 시 애니메이션 */
+    /* ease: 빠르게 시작해서 느리게 끝나는 애니메이션 */
+    /* transform: 요소의 크기, 회전, 기울기, 이동 등을 변경하는 속성 */
+    /* box-shadow: 요소의 그림자를 설정하는 속성 */
+    /* 호버 시 애니메이션을 적용하기 위해 미리 정의 */
+}
+
+/* 카드 호버 시 스타일 */
+.card:hover {
+    transform: scale(1.05); /* 호버 시 확대 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 그림자 확대 */
+}
+
+/* 카드 이미지 */
+.card_img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* 카드 제목 */
+.card_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* 카드 버튼 */
+.card_button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card_button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* OrderList */
+
+/* 하단 버튼(주문 목록 초기화 버튼) */
+.clear_button {
+    display: block;
+    margin: 25px auto 0; /* 가운데 정렬 */
+    padding: 10px 15px;
+    font-size: 1.0rem;
+    border: none;
+    background-color: #d9534f; /* 빨간색 */
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear_button:hover {
+    background-color: #c9302c; /* 좀 더 진한 빨간색 */
+}

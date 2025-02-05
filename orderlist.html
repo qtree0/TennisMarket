@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Order List</title>
+        
+        <!-- 외부 스타일 시트 참조 -->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+
+        <script src="./script.js" defer></script>
+
+        <!-- 내부 스타일 시트 참조 -->
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            a {
+                display: block;
+                text-align: center;
+                margin-bottom: 35px;
+            }
+
+            table {
+                margin: auto;
+                border-collapse: separate;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Order List</h1>
+        <a href="./main.html">Go Home</a>
+
+        <table style="border: 2px solid black; border-radius: 5px; padding: 15px;">
+            <!-- 테이블의 제목(열 제목) 부분 -->
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Product</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+
+            <!-- 테이블의 본문(데이터가 들어갈 공간) -->
+            <!-- JavaScript에서 동적으로 내용 추가 -->
+            <tbody id="orderTableBody">
+                <!-- JavaScript에서 주문 내역 추가 -->
+            </tbody>
+
+        </table>
+
+        <!-- Clear List 버튼 추가 -->
+        <button id="clearButton" class="clear_button">Clear List</button>
+
+    </body>
+</html>
